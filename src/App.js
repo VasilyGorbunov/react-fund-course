@@ -1,11 +1,8 @@
 import './styles/app.css';
 
-import {useRef, useState} from "react";
+import {useState} from "react";
 import PostList from "./components/PostList";
-import MyButton from "./components/UI/button/MyButton";
-import MyInput from "./components/UI/input/MyInput";
 import PostForm from "./components/PostForm";
-import postForm from "./components/PostForm";
 import MySelect from "./components/UI/select/MySelect";
 
 function App() {
@@ -40,8 +37,8 @@ function App() {
                     onChange={sortPosts}
                     defaultValue="Сортировка"
                     options={[
-                        { value: 'title', name: 'По заголовку'},
-                        { value: 'body', name: 'По описанию'}
+                        {value: 'title', name: 'По заголовку'},
+                        {value: 'body', name: 'По описанию'}
                     ]}
                 />
             </div>
